@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Math2" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-06-20T04:22:11" hostname="admin-PC" time="0.001">
+  <properties/>
+  <testcase name="Featuer method one" classname="Math2" time="0.0"/>
+  <testcase name="Featuer method two" classname="Math2" time="0.001"/>
+  <system-out><![CDATA[-311558392
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

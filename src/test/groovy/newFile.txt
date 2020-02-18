@@ -1,0 +1,5 @@
+1.install node.js and visual studio code
+2.Add “C:\Program Files\nodejs”in system environment path
+3.Open cmd:cd C:\Billy\Testing->mkdir Cypress-> npm install cypress --save -dev -g,then windows 10 will installed in :C:\Users\Billy Yang\AppData\Local\Cypress\Cache\3.2.0\Cypress
+4.npm init,enter,enter untill author:Billy
+5.Cmd->”Code .” will open the visual studio code

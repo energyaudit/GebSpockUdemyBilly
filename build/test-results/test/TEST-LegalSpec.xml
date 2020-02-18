@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LegalSpec" tests="1" skipped="0" failures="1" errors="0" timestamp="2019-06-20T04:22:11" hostname="admin-PC" time="0.12">
+  <properties/>
+  <testcase name="we are able to fetch the legal information about greach" classname="LegalSpec" time="0.12">
+    <failure message="java.lang.IllegalStateException: The driver executable does not exist: E:\QA INSTALL\chromedriver" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable does not exist: E:\QA INSTALL\chromedriver
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at LegalSpec.we are able to fetch the legal information about greach(BrowserConfig.groovy:17)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

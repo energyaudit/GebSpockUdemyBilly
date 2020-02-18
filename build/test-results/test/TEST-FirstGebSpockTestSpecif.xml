@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="FirstGebSpockTestSpecif" tests="1" skipped="0" failures="1" errors="0" timestamp="2019-06-20T04:22:10" hostname="admin-PC" time="0.632">
+  <properties/>
+  <testcase name="Fill Contact us form and click on Sumit button" classname="FirstGebSpockTestSpecif" time="0.632">
+    <failure message="java.lang.IllegalStateException: The driver executable does not exist: E:\QA INSTALL\geckodriver" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable does not exist: E:\QA INSTALL\geckodriver
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at FirstGebSpockTestSpecif.Fill Contact us form and click on Sumit button(FirstGebSpockTestSpecif.groovy:12)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
