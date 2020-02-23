@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.632s</div>
+<div class="counter">11.341s</div>
 <p>duration</p>
 </div>
 </td>
@@ -66,6 +66,12 @@
 <li>
 <a href="#tab1">Tests</a>
 </li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
+</li>
 </ul>
 <div id="tab0" class="tab">
 <h2>Failed tests</h2>
@@ -73,17 +79,68 @@
 <a name="Fill Contact us form and click on Sumit button"></a>
 <h3 class="failures">Fill Contact us form and click on Sumit button</h3>
 <span class="code">
-<pre>java.lang.IllegalStateException: The driver executable does not exist: E:\QA INSTALL\geckodriver
+<pre>geb.driver.DriverCreationException: failed to create driver from callback 'GebConfig$_run_closure3@3da60228'
+	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:35)
+	at geb.driver.CachingDriverFactory.getDriver_closure4(CachingDriverFactory.groovy:57)
+	at geb.driver.CachingDriverFactory.getDriver_closure4(CachingDriverFactory.groovy)
+	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:81)
+	at geb.driver.CachingDriverFactory.getDriver(CachingDriverFactory.groovy:56)
+	at geb.Configuration.createDriver(Configuration.groovy:675)
+	at geb.Configuration.getDriver(Configuration.groovy:353)
+	at geb.Browser.getDriver(Browser.groovy:160)
+	at geb.navigator.factory.BrowserBackedNavigatorFactory.&lt;init&gt;(BrowserBackedNavigatorFactory.groovy:31)
+	at geb.Configuration.createNavigatorFactory(Configuration.groovy:413)
+	at geb.Browser.createNavigatorFactory(Browser.groovy:982)
+	at geb.Browser.getNavigatorFactory(Browser.groovy:170)
+	at geb.Page.init(Page.groovy:143)
+	at geb.Browser.initialisePage(Browser.groovy:1116)
+	at geb.Browser.createPage(Browser.groovy:829)
+	at geb.Browser.to(Browser.groovy:537)
+	at geb.Browser.to(Browser.groovy:526)
+	at geb.spock.GebSpec.methodMissing(GebSpec.groovy:60)
+	at FirstGebSpockTestSpecif.Fill Contact us form and click on Sumit button(FirstGebSpockTestSpecif.groovy:19)
+Caused by: java.lang.IllegalStateException: The driver executable does not exist: E:\QA INSTALL\chromedriver
 	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
 	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
 	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
 	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
-	at FirstGebSpockTestSpecif.Fill Contact us form and click on Sumit button(FirstGebSpockTestSpecif.groovy:12)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at GebConfig.run_closure3(GebConfig.groovy:39)
+	at GebConfig.run_closure3(GebConfig.groovy)
+	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:29)
+	... 18 more
+</pre>
+</span>
+<span class="code">
+<pre>geb.driver.DriverCreationException: failed to create driver from callback 'GebConfig$_run_closure3@3da60228'
+	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:35)
+	at geb.driver.CachingDriverFactory.getDriver_closure4(CachingDriverFactory.groovy:57)
+	at geb.driver.CachingDriverFactory.getDriver_closure4(CachingDriverFactory.groovy)
+	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:81)
+	at geb.driver.CachingDriverFactory.getDriver(CachingDriverFactory.groovy:56)
+	at geb.Configuration.createDriver(Configuration.groovy:675)
+	at geb.Configuration.getDriver(Configuration.groovy:353)
+	at geb.Browser.getDriver(Browser.groovy:160)
+	at geb.Browser.clearCookies(Browser.groovy:630)
+	at geb.Browser.clearCookiesQuietly(Browser.groovy:638)
+	at geb.spock.GebSpec.resetBrowser(GebSpec.groovy:51)
+	at geb.spock.GebSpec.cleanup(GebSpec.groovy:73)
+Caused by: java.lang.IllegalStateException: The driver executable does not exist: E:\QA INSTALL\chromedriver
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at GebConfig.run_closure3(GebConfig.groovy:39)
+	at GebConfig.run_closure3(GebConfig.groovy)
+	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:29)
+	... 11 more
 </pre>
 </span>
 </div>
@@ -100,10 +157,34 @@
 </thead>
 <tr>
 <td class="failures">Fill Contact us form and click on Sumit button</td>
-<td class="failures">0.632s</td>
+<td class="failures">11.341s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>We are in given block
+</pre>
+</span>
+</div>
+<div id="tab3" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>1582411484386	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files\\Mozilla Firefox\\firefox.exe&quot; &quot;-marionette&quot; &quot;-foreground&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofileYkW9NP&quot;
+1582411486532	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1582411488632	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1582411488632	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1582411488632	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1582411488633	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1582411492211	Marionette	INFO	Listening on port 58850
+1582411492701	Marionette	WARN	TLS certificate errors will be ignored for this session
+Feb 22, 2020 5:44:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</pre>
+</span>
 </div>
 </div>
 <div id="footer">
@@ -113,7 +194,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.10.3</a> at Jun 20, 2019 12:22:13 AM</p>
+<a href="http://www.gradle.org">Gradle 4.10.3</a> at Feb 22, 2020 5:44:54 PM</p>
 </div>
 </div>
 </body>

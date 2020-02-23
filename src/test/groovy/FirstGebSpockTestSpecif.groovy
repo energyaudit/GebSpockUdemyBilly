@@ -8,7 +8,8 @@ class FirstGebSpockTestSpecif extends GebSpec {
 
 
     def "Fill Contact us form and click on Sumit button" () {
-        System.setProperty("webdriver.gecko.driver", "/QA INSTALL/geckodriver");
+      //  System.setProperty("webdriver.gecko.driver", "/QA INSTALL/geckodriver");
+        System.setProperty("webdriver.gecko.driver", "src/test/resources/geckodriver.exe");
         def browser=new Browser(driver:new FirefoxDriver())
 //        System.setProperty("webdriver.chrome.driver", "/QA INSTALL/chromedriver");
         given:

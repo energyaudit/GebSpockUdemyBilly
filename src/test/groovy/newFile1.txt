@@ -1,1 +1,1 @@
-Java installed: java -version Add system enviroment: method 1: add jdk path directly at end of path, method2:add JAVA_HOME first then past %JAVA_HOME%in	 at end of path.
+Java installed: java -version Add system enviroment: method 1: add jdk path directly at end of path, method2:add JAVA_HOME first then past %JAVA_HOME%in	 at end of path.Java installed: java -version Add system enviroment: method 1: add jdk path directly at end of path, method2:add JAVA_HOME first then past %JAVA_HOME%in	 at end of path.
