@@ -35,5 +35,6 @@ environments{
 baseUrl = "http://abodeqa.com"
 reportsDir =".target/report"
 
-System.setProperty("webdriver.chrome.driver", "/QA INSTALL/chromedriver");
+//System.setProperty("webdriver.chrome.driver", "/QA INSTALL/chromedriver");
+System.setProperty("webdriver.chrome.driver", "../resources/chromedriver.exe");//this need update whenever chrome updated
 driver = {new ChromeDriver()}
