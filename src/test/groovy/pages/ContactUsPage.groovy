@@ -15,8 +15,8 @@ static  url="/contact-us/"
     emailField(wait:true){$("input.email")}
        commentField(wait: true){ $("#contact-form-comment-g1280-comment") }
        submitButton(wait: true) { $("input.pushbutton-wide") }
-       AllTabLink(wait: 10) {$("li.page_item a")}
-       tabs(wait:10){module AbodeqaTabs }
+       AllTabLink(wait: 60) {$("li.page_item a")}
+       tabs(wait:60){module AbodeqaTabs }
 
    }
     def "enter name" (nameString){

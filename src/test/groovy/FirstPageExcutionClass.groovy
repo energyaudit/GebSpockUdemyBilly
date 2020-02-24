@@ -1,8 +1,10 @@
 import geb.Browser
 import org.openqa.selenium.firefox.FirefoxDriver
 import pages.ContactUsPage
+System.setProperty("webdriver.gecko.driver", "../resources/geckodriver.exe");
+//System.setProperty("webdriver.gecko.driver", "/QA INSTALL/geckodriver");
 
-System.setProperty("webdriver.gecko.driver", "/QA INSTALL/geckodriver");
+//driver = {new FirefoxDriver()}
 def browser=new Browser(driver:new FirefoxDriver())
 
 Browser.drive {
@@ -11,6 +13,7 @@ Browser.drive {
        println currentUrl
        "enter name"("Abodeqa")}
     finally{
-       driver.close()
+//       driver.close()
+        Browser.close()
            }
 }
